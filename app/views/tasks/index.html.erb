@@ -1,7 +1,13 @@
+<div class="container p-3 m-3">
+<div class="row">
 <h1>My Tasks!</h1>
+</div>
 <ul>
 <% @tasks.each do |task| %>
 <li><%= link_to task.title, "tasks/#{task.id}" %></li>
 <% end %>
 </ul>
-<%= link_to "NOVO", new_path %>
+<%= link_to "NOVO", 'tasks/new', class:"btn btn-lg btn-secondary" %>
+</div>
+</div>
+
