@@ -4,4 +4,5 @@
 <li><%= @task.details%></li>
 <%= link_to 'VOLTAR', tasks_path %>
 <%= link_to "EDITAR", edit_path, class:"btn btn-lg btn-secondary" %>
+<%= link_to "DELETAR", destroy_task_path, method: :delete, class:"btn btn-lg btn-secondary" %>
 </ul>
